@@ -1,0 +1,14 @@
+{
+  "name": "boonchu-tools",
+  "description": "เครื่องมือวิเคราะห์หุ้นจากเอกสารต้นฉบับ สำหรับ Claude Code",
+  "owner": {
+    "name": "Boonchu Tummeng"
+  },
+  "plugins": [
+    {
+      "name": "stock-deepdive",
+      "source": "./",
+      "description": "วิเคราะห์หุ้นเชิงลึกจากเอกสารต้นฉบับที่บริษัทยื่นเอง แล้วผลิตเป็นบทความ HTML ภาษาไทยภายในราว 30 นาที รองรับหุ้นไทย (ก.ล.ต. iDisc) และหุ้นสหรัฐ (SEC EDGAR)"
+    }
+  ]
+}
