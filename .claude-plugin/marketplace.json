@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "stock-deepdive",
+      "name": "stock-deepdive-lite",
       "source": "./",
       "description": "วิเคราะห์หุ้นเชิงลึกจากเอกสารต้นฉบับที่บริษัทยื่นเอง แล้วผลิตเป็นบทความ HTML ภาษาไทยภายในราว 30 นาที รองรับหุ้นไทย (ก.ล.ต. iDisc) และหุ้นสหรัฐ (SEC EDGAR)"
     }

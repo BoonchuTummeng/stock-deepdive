@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "stock-deepdive",
-  "displayName": "Stock DeepDive",
+  "name": "stock-deepdive-lite",
+  "displayName": "Stock DeepDive Lite",
   "version": "1.0.0",
   "description": "วิเคราะห์หุ้นเชิงลึกจากเอกสารต้นฉบับ — ดึงงบจาก SEC EDGAR (สหรัฐ) และ ก.ล.ต. iDisc (ไทย) อัตโนมัติ แล้วผลิตเป็นบทความ HTML ภาษาไทยภายในราว 40 นาที",
   "author": {

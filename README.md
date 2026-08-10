@@ -30,10 +30,13 @@
 
 ```
 /plugin marketplace add BoonchuTummeng/stock-deepdive
-/plugin install stock-deepdive@boonchu-tools
+/plugin install stock-deepdive-lite@boonchu-tools
 ```
 
 ถ้าหลังติดตั้งขึ้นข้อความว่า `Run /reload-plugins to activate.` ให้พิมพ์ `/reload-plugins`
+
+> **ทำไมชื่อ repo กับชื่อปลั๊กอินไม่ตรงกัน** — repo ชื่อ `stock-deepdive` แต่ปลั๊กอินชื่อ `stock-deepdive-lite`
+> เพื่อไม่ให้ชนกับสกิลชื่อเดียวกันที่บางคนอาจมีอยู่แล้วในเครื่อง คำสั่งที่ได้จึงขึ้นต้นด้วย `/stock-deepdive-lite:`
 
 ### ต้องมีอะไรบ้าง
 
@@ -53,13 +56,13 @@ pip install pypdf
 ## วิธีใช้
 
 ```
-/stock-deepdive:deepdive DITTO
+/stock-deepdive-lite:deepdive DITTO
 ```
 
 ถ้าอยากดึงเอกสารอย่างเดียวไม่ต้องวิเคราะห์:
 
 ```
-/stock-deepdive:fetch DITTO
+/stock-deepdive-lite:fetch DITTO
 ```
 
 **หุ้นสหรัฐต้องใส่อีเมลจริงครั้งแรก** — SEC บังคับให้ผู้เรียก API ระบุตัวตน ไม่งั้นบล็อก
