@@ -3,7 +3,7 @@
   "name": "stock-deepdive",
   "displayName": "Stock DeepDive",
   "version": "1.0.0",
-  "description": "วิเคราะห์หุ้นเชิงลึกจากเอกสารต้นฉบับ — ดึงงบจาก SEC EDGAR (สหรัฐ) และ ก.ล.ต. iDisc (ไทย) อัตโนมัติ แล้วผลิตเป็นบทความ HTML ภาษาไทยภายในราว 30 นาที",
+  "description": "วิเคราะห์หุ้นเชิงลึกจากเอกสารต้นฉบับ — ดึงงบจาก SEC EDGAR (สหรัฐ) และ ก.ล.ต. iDisc (ไทย) อัตโนมัติ แล้วผลิตเป็นบทความ HTML ภาษาไทยภายในราว 40 นาที",
   "author": {
     "name": "Boonchu Tummeng"
   },
