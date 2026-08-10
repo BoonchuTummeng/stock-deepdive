@@ -2,7 +2,7 @@
   "name": "boonchu-tools",
   "description": "เครื่องมือวิเคราะห์หุ้นจากเอกสารต้นฉบับ สำหรับ Claude Code",
   "owner": {
-    "name": "Boonchu Tummeng"
+    "name": "boonchu"
   },
   "plugins": [
     {
