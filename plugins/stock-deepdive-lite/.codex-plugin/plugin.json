@@ -1,0 +1,38 @@
+{
+  "name": "stock-deepdive-lite",
+  "version": "1.0.0",
+  "description": "วิเคราะห์หุ้นเชิงลึกจากเอกสารต้นฉบับ — ดึงงบจาก SEC EDGAR (สหรัฐ) และ ก.ล.ต. iDisc (ไทย) อัตโนมัติ แล้วผลิตเป็นบทความ HTML ภาษาไทยภายในราว 40 นาที",
+  "author": {
+    "name": "boonchu",
+    "url": "https://github.com/BoonchuTummeng"
+  },
+  "homepage": "https://github.com/BoonchuTummeng/stock-deepdive",
+  "repository": "https://github.com/BoonchuTummeng/stock-deepdive",
+  "license": "MIT",
+  "keywords": [
+    "stocks",
+    "equity-research",
+    "financial-analysis",
+    "sec-edgar",
+    "thai-stocks",
+    "set"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Stock DeepDive Lite",
+    "shortDescription": "วิเคราะห์หุ้นจากเอกสารต้นฉบับ",
+    "longDescription": "ดึงเอกสารที่บริษัทยื่นเอง (SEC EDGAR สำหรับหุ้นสหรัฐ · ก.ล.ต. iDisc สำหรับหุ้นไทย) แกะตารางที่ฝังอยู่ในไฟล์ Word/Excel หาหน้า PDF ที่เป็นภาพสแกน แล้วเขียนเป็นบทความ HTML ภาษาไทย 10 ส่วน โดยตัวเลขทุกตัวต้องผ่านตารางข้อเท็จจริงกลางที่มีไฟล์ต้นทางและชั้นความน่าเชื่อถือกำกับ",
+    "developerName": "boonchu",
+    "category": "Education & Research",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/BoonchuTummeng/stock-deepdive",
+    "defaultPrompt": [
+      "ใช้ $deepdive วิเคราะห์หุ้น DITTO เชิงลึก",
+      "ใช้ $fetch ดึงงบของ TACC มาเก็บไว้",
+      "ใช้ $deepdive วิเคราะห์หุ้น ARM จาก SEC EDGAR"
+    ]
+  }
+}

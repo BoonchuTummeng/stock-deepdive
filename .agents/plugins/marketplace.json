@@ -1,0 +1,20 @@
+{
+  "name": "boonchu-tools",
+  "interface": {
+    "displayName": "Boonchu Tools"
+  },
+  "plugins": [
+    {
+      "name": "stock-deepdive-lite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/stock-deepdive-lite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research"
+    }
+  ]
+}
