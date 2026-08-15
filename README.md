@@ -25,7 +25,7 @@
 
 ## ติดตั้ง
 
-> 📊 **มีสไลด์สอนติดตั้งแบบละเอียด** อยู่ที่ [`docs/stock-deepdive-guide.pptx`](docs/stock-deepdive-guide.pptx) — 27 สไลด์ ครอบคลุมทั้งสามช่องทางติดตั้ง (Claude Code · Claude Desktop · Codex) สถาปัตยกรรมระบบ การแบ่งงานระหว่าง sub-agent กฎที่ตัวเลขเข้าบทความได้ทางเดียว หัวข้อวิเคราะห์ และแหล่งข้อมูล
+> 📊 **มีสไลด์สอนติดตั้งแบบละเอียด** อยู่ที่ [`docs/stock-deepdive-guide.pptx`](docs/stock-deepdive-guide.pptx) — 34 สไลด์ ครอบคลุมทั้งสามช่องทางติดตั้ง (Claude Code · Claude Desktop · Codex) พร้อมภาพหน้าจอจริงทุกขั้น สถาปัตยกรรมระบบ การแบ่งงานระหว่าง sub-agent กฎที่ตัวเลขเข้าบทความได้ทางเดียว หัวข้อวิเคราะห์ และแหล่งข้อมูล
 
 ### Claude Code
 
