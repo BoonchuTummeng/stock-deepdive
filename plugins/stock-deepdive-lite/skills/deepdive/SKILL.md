@@ -42,10 +42,12 @@ description: วิเคราะห์หุ้นเชิงลึกจา�
 
 ## ขั้นที่ 0 — เตรียมเอกสาร ⏱ ~3 นาที
 
-**0.0 หา `<ราก>`** — คำสั่งข้างล่างทุกอันเขียนเป็น `<ราก>/bin/...`
-**`<ราก>` = โฟลเดอร์ที่มี `bin/` กับ `skills/` อยู่ด้วยกัน** · Claude Code ใช้ `${CLAUDE_PLUGIN_ROOT}` ได้ตรง ๆ ·
-Codex ถอยขึ้นสองชั้นจากไฟล์ SKILL.md นี้ · รายละเอียดและวิธีหาแบบอื่นอยู่ใน [`ROOT.md`](../../ROOT.md)
-🔴 **ตรวจหนึ่งครั้งก่อนใช้จริง** ว่า `python "<ราก>/bin/extract.py" --help` ไม่ error — error แปลว่าหาผิด ให้หาใหม่ อย่าเดาต่อ
+**0.0 🔴 ทุกช่องคำสั่งมีสองบรรทัด ให้รันบรรทัดเดียว — ห้ามรันทั้งคู่**
+ทั้งสองทำงานเหมือนกันทุกประการ ต่างแค่วิธีบอกที่อยู่ของสคริปต์
+- **Claude Code → บรรทัดบน** `${CLAUDE_PLUGIN_ROOT}` มีให้อยู่แล้ว เชลล์ขยายค่าเอง **ไม่ต้องแก้อะไร**
+- **Codex → บรรทัดล่าง** ต้องแทน `<ราก>` ด้วย path จริงก่อนรัน · `<ราก>` = โฟลเดอร์ที่มี `bin/` กับ `skills/`
+  อยู่ด้วยกัน = ถอยขึ้นสองชั้นจากไฟล์ SKILL.md นี้ · วิธีหาแบบอื่นอยู่ใน [`ROOT.md`](../../ROOT.md)
+  🔴 ตรวจหนึ่งครั้งก่อนใช้จริงว่า `python "<ราก>/bin/extract.py" --help` ไม่ error — error แปลว่าหาผิด ให้หาใหม่ อย่าเดาต่อ
 
 **0.1 หุ้นตลาดไหน** — ถามถ้าไม่ชัด อย่าเดา ชื่อย่อซ้ำกันข้ามตลาดได้
 
@@ -54,7 +56,8 @@ Codex ถอยขึ้นสองชั้นจากไฟล์ SKILL.md �
 **0.3 รัน `extract.py` เสมอ** แม้เพิ่งดึงมาสด ๆ
 
 ```
-python "<ราก>/bin/extract.py" ./data/<TICKER>
+python "${CLAUDE_PLUGIN_ROOT}/bin/extract.py" ./data/<TICKER>    # Claude Code
+python "<ราก>/bin/extract.py" ./data/<TICKER>                   # Codex
 ```
 
 ได้ `./data/<TICKER>/MANIFEST.md` = สารบัญว่าอะไรอ่านได้ อยู่ไฟล์ไหน กี่ตัวอักษร
@@ -160,6 +163,13 @@ python "<ราก>/bin/extract.py" ./data/<TICKER>
 **3.2 ประกอบ**
 
 ```
+# Claude Code
+python "${CLAUDE_PLUGIN_ROOT}/bin/build_paper.py" --parts ./paper/_parts \
+  --out ./paper/<TICKER>-deepdive-<วันที่>.html \
+  --title "<TICKER> — หัวเรื่อง" --subtitle "คำโปรย" \
+  --tag "SET · <TICKER>" --tag "<วันที่>" --sources "เอกสารที่ใช้..."
+
+# Codex
 python "<ราก>/bin/build_paper.py" --parts ./paper/_parts \
   --out ./paper/<TICKER>-deepdive-<วันที่>.html \
   --title "<TICKER> — หัวเรื่อง" --subtitle "คำโปรย" \
@@ -172,7 +182,8 @@ python "<ราก>/bin/build_paper.py" --parts ./paper/_parts \
 **3.3 ตรวจตัวเลขด้วยสคริปต์**
 
 ```
-python "<ราก>/bin/check_numbers.py" ./paper/<TICKER>-deepdive-<วันที่>.html ./paper/<TICKER>-FACTS.md
+python "${CLAUDE_PLUGIN_ROOT}/bin/check_numbers.py" ./paper/<TICKER>-deepdive-<วันที่>.html ./paper/<TICKER>-FACTS.md   # Claude Code
+python "<ราก>/bin/check_numbers.py" ./paper/<TICKER>-deepdive-<วันที่>.html ./paper/<TICKER>-FACTS.md                  # Codex
 ```
 
 ตัวไหนหลุด ⇒ เพิ่มเข้า FACTS.md พร้อมแหล่ง · หรือกำกับ `[คำนวณ]` แล้วแสดงวิธีคิด · หรือเอาออก
